@@ -1,0 +1,131 @@
+aside{
+	.mainlogo{
+		height: 130px;
+		width: 100%;
+		background-color: $hele;
+		position: relative;
+
+	}//mainlogo
+	.btn#expand{
+		cursor: hand;
+		cursor: pointer;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		float:right;
+		background-color: $hele;
+		margin-top: 10px;
+		&.expand{
+			background-image: url(../img/expand.png);
+
+		}
+		&.compact{
+			background-image: url(../img/compact.png);
+			
+		}
+	}
+
+	nav.main{
+		padding-top: 20px;
+
+
+
+		ul{
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			font-size: 0.95em;
+			li{
+				margin: 0;
+				padding: 0;
+				&.kodu a{
+					background-image: url("../img/home.png");
+				}
+				&.lehed a{
+					background-image: url("../img/leht.png");
+				}
+				&.uudised a{
+					background-image: url("../img/pliiats.png");
+				}
+				&.satted a{
+					background-image: url("../img/voti.png");
+				}
+				&.tooted a{
+					background-image: url("../img/ruudud.png");
+				}
+				&:hover{
+					@include colorop(1);
+				}
+				a{
+					text-decoration: none;
+					color: #fff;
+					line-height: 40px;
+					display: block;
+					padding-left: 58px;
+					background-repeat: no-repeat;
+					background-position: 25px center;
+				}
+
+				&:hover ul li{
+					height: 30px;
+					&:first-of-type{
+						padding-top: 10px;
+					}
+					&:last-of-type{
+						padding-bottom: 10px;
+					}
+
+				}
+				ul{
+					
+					background-color: $hele;
+					font-size: 0.85em;
+					height: auto;
+					overflow: hidden;
+					li{
+						-webkit-transition: all 200ms linear;
+						-moz-transition: all 200ms linear;
+						-ms-transition: all 200ms linear;
+						-o-transition: all 200ms linear;
+						transition: all 200ms linear;
+						height: 0px;
+						&:hover{
+							background-color: transparent;
+							a{
+								@include text-color();
+							}
+						}
+						&:first-of-type{
+							padding-top: 0px;
+						}
+						&:last-of-type{
+							padding-bottom: 0px;
+						}
+						a{
+							line-height: 30px;
+							padding-left: 35px;
+							background-image: none !important;
+							position: relative;
+							&:hover:after{
+								@include colorop(1);
+							}
+							&:after{
+								content:"";
+								height: 5px;
+								width: 5px;
+								background-color: #fff;
+								position: absolute;
+								left: 25px;
+								top: 50%;
+								margin-top: -2.5px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,44 @@
+header.main{
+	margin-left: 215px;
+	height: 70px;
+	@include colorop(1);
+	position: relative;
+	&:after{
+		content:"";
+		height: 70px;
+		width: 17px;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		background-position: bottom;
+		background-repeat: no-repeat;
+		background-image: url("../img/vari.png");
+	}
+	p{
+		float:right;
+		margin: 0px;
+		line-height: 70px;
+		height: 70px;
+		padding: 0;
+		padding-right: 20px;
+		color: #fff;
+		font-family: 'latoregular';
+		font-size: 0.8em;
+		a{
+			color: #fff;
+			font-family: 'latobold';
+		}
+	}
+	a.crisplogo{
+		float:right;
+		background-repeat: no-repeat;
+		background-position: center center;
+		width: 90px;
+		background-color: rgba(0,0,0, 0.2);
+		&:hover{
+			background-color: rgba(0,0,0, 0.1);
+		}
+		height: 100%;
+		background-image: url("../img/crisplogo.png");
+	}	
+}//Header

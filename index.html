@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="/js/jquery.js"></script>
+<script src="/js/jquery-ui.js"></script>
+<script src="/js/min/jscript.min.js"></script>
+<script src="/js/min/wysiwyg.min.js"></script>
+
+</head>
+<body>
+<header class="main">
+	<a href="http://www.crisp.ee" class="crisplogo" target="_blank"></a>
+	<p>Welcome Admin (<a href="#">Log Off</a>)</p>
+</header><!-- main header -->
+<aside>
+	<div class="mainlogo">
+		
+	</div><!-- mainlogo -->
+	<nav class="main">
+		<ul>
+			<li class="kodu"><a href="">Kodu</a></li>
+			<li class="lehed"><a href="">Vahelehed</a>
+				<ul>
+					<li><a href="">Kõik vahelehed</a></li>
+					<li><a href="">Lisa vaheleht</a></li>
+				</ul>
+			</li>
+			<li class="uudised"><a href="">Uudised</a></li>
+			<li class="tooted"><a href="">Tooted</a></li>
+			<li class="satted"><a href="">Sätted</a></li>
+		</ul>
+	</nav><!-- põhinavigatsioon -->
+	<div class="btn expand" id="expand" ></div>
+</aside>
+<section class="main group">
+	<div class="error">Sul pole valitud ühetgi lehte! Palun vali leht, et seda kustutada!</div><!-- error -->
+	<div class="box tabsActive group" id="avaleht">
+		<header class="boxheader group">
+			<div class="headicon" style="background-image: url(../img/pliiats.png);"></div><!-- icon -->
+			<p>Avalehe tekst</p>
+			<div class="buttoncontainer">
+				<input type="submit" value="" class="btn" style="background-image: url(img/save.png);">
+			</div><!-- buttoncontainer -->
+			
+		</header><!-- boxheader -->
+		<nav class="lang">
+			<ul>
+				<li><a href="#est" class="lang-link" onclick="return false;">EST</a></li>
+				<li><a href="#eng" class="lang-link"  onclick="return false;">ENG</a></li>
+				<li><a href="#ru" class="lang-link"  onclick="return false;">RU</a></li>
+			</ul>
+		</nav><!-- lang choose -->
+		<div id="eng" class="tab-content">
+			<div class="langtag">ENG</div>
+			<div textarea="lahter1eng" id="lahter1engDiv" class="lahter w100 editor" contenteditable>
+			Sisu
+			</div>
+			<textarea name="lahter1eng" id="lahter1eng" style="display:none;"></textarea>
+		</div>
+		<div id="ru" class="tab-content">
+			<div class="langtag">RU</div>
+			<div textarea="lahter1ru" id="lahter1ruDiv" class="lahter w100 editor" contenteditable>
+			Sisu
+			</div>
+			<textarea name="lahter1ru" id="lahter1ru" style="display:none;"></textarea>
+		</div>
+		<div id="est" class="tab-content">
+			<div class="langtag">EST</div>
+			<div textarea="lahter1est" id="lahter1estDiv" class="lahter w100 editor" contenteditable>
+			Sisu
+			</div>
+			<textarea name="lahter1est" id="lahter1est" style="display:none;"></textarea>
+		</div>
+		
+	</div><!-- box -->
+
+	<div class="box tabsActive group">
+		<header class="boxheader group">
+			<div class="headicon" style="background-image: url(../img/pliiats.png);"></div><!-- icon -->
+			<p>Footeri tekst</p>
+			<div class="buttoncontainer">
+				<input type="submit" value="" class="btn" style="background-image: url(img/save.png);">
+			</div><!-- buttoncontainer -->
+			
+		</header><!-- boxheader -->
+		<nav class="lang">
+			<ul>
+				<li><a href="#est" class="lang-link"  onclick="return false;">EST</a></li>
+				<li><a href="#eng" class="lang-link"  onclick="return false;">ENG</a></li>
+				<li><a href="#ru" class="lang-link"  onclick="return false;">RU</a></li>
+			</ul>
+		</nav><!-- lang choose -->
+
+		<div id="eng" class="tab-content">
+			<div class="langtag">ENG</div>
+			<div textarea="lahter2eng" id="lahter2engDiv" class="lahter w100 editor" contenteditable>
+			Sisu
+			</div>
+			<textarea name="lahter2eng" id="lahter2eng" style="display:none;"></textarea>
+		</div>
+		<div id="ru" class="tab-content">
+			<div class="langtag">RU</div>
+			<div textarea="lahter2ru" id="lahter2ruDiv" class="lahter w100 editor" contenteditable>
+			Sisu
+			</div>
+			<textarea name="lahter2ru" id="lahter2ru" style="display:none;"></textarea>
+		</div>
+		<div id="est" class="tab-content">
+			<div class="langtag">EST</div>
+			<div textarea="lahter2est" id="lahter2estDiv" class="lahter w100 editor" contenteditable>
+			Sisu
+			</div>
+			<textarea name="lahter2est" id="lahter2est" style="display:none;"></textarea>
+		</div>
+	</div><!-- box -->
+
+	<div class="box tabsActive group">
+		<header class="boxheader group">
+			<div class="headicon" style="background-image: url(../img/pliiats.png);"></div><!-- icon -->
+			<p>Slider</p>
+			<div class="buttoncontainer">
+				<input type="submit" value="" class="btn" style="background-image: url(img/prugi.png);">
+				<input type="submit" value="" class="btn" style="background-image: url(img/plus.png);">
+			</div><!-- buttoncontainer -->
+			
+		</header><!-- boxheader -->
+		<nav class="lang">
+			<ul>
+				<li><a href="#est" class="lang-link"  onclick="return false;">EST</a></li>
+				<li><a href="#eng" class="lang-link"  onclick="return false;">ENG</a></li>
+				<li><a href="#ru" class="lang-link"  onclick="return false;">RU</a></li>
+			</ul>
+		</nav><!-- lang choose -->
+		<div id="est" class="tab-content">
+			<div class="langtag">EST</div>
+			<table class="list">
+			    <tr class="header">
+			        <td><input type="checkbox" name="select-all" id="select-all-est" class="select-all" />
+						<label for="select-all-est">vali</label>
+			        </td>
+			        <td><a href="">lehe nimi</a></td>
+			        <td><a href="">autor</a></td>
+			        <td><a href="">kuupäev</a></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check0-est">
+					<label for="check0-est"></label>
+			        </td>
+			        <td><a href="">kontakt</a></td>
+			        <td>admin</td>
+			        <td>26.02.2014</td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check1-est">
+					<label for="check1-est"></label>
+			        </td>
+			        <td><a href="">kontakt</a></td>
+			        <td>admin</td>
+			        <td>26.02.2014</td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check2-est">
+					<label for="check2-est"></label>
+			        </td>
+			        <td><a href="">kontakt</a></td>
+			        <td>admin</td>
+			        <td>26.02.2014</td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check3-est">
+					<label for="check3-est"></label>
+			        </td>
+			        <td><a href="">kontakt</a></td>
+			        <td>admin</td>
+			        <td>26.02.2014</td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check4-est">
+					<label for="check4-est"></label>
+			        </td>
+			        <td><a href="">kontakt</a></td>
+			        <td>admin</td>
+			        <td>26.02.2014</td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check5-est">
+					<label for="check5-est"></label>
+			        </td>
+			        <td><a href="">kontakt</a></td>
+			        <td>admin</td>
+			        <td>26.02.2014</td>
+			    </tr>
+			</table>
+		</div><!-- est -->
+		<div id="eng" class="tab-content">
+			<div class="langtag">ENG</div>
+			<table class="list">
+			    <tr class="header">
+			        <td><input type="checkbox" name="select-all" id="select-all-eng" class="select-all" />
+						<label for="select-all-eng">vali</label>
+			        </td>
+			        <td><a href="">lehe nimi</a></td>
+			        <td><a href="">autor</a></td>
+			        <td><a href="">kuupäev</a></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check0-eng">
+					<label for="check0-eng"></label>
+			        </td>
+			        <td><a href="">kontakt</a></td>
+			        <td>admin</td>
+			        <td>26.02.2014</td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check1-eng">
+					<label for="check1-eng"></label>
+			        </td>
+			        <td><a href="">kontakt</a></td>
+			        <td>admin</td>
+			        <td>26.02.2014</td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check2-eng">
+					<label for="check2-eng"></label>
+			        </td>
+			        <td><a href="">kontakt</a></td>
+			        <td>admin</td>
+			        <td>26.02.2014</td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check3-eng">
+					<label for="check3-eng"></label>
+			        </td>
+			        <td><a href="">kontakt</a></td>
+			        <td>admin</td>
+			        <td>26.02.2014</td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check4-eng">
+					<label for="check4-eng"></label>
+			        </td>
+			        <td><a href="">kontakt</a></td>
+			        <td>admin</td>
+			        <td>26.02.2014</td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check5-eng">
+					<label for="check5-eng"></label>
+			        </td>
+			        <td><a href="">kontakt</a></td>
+			        <td>admin</td>
+			        <td>26.02.2014</td>
+			    </tr>
+			</table>
+		</div><!-- eng -->
+		<div id="ru" class="tab-content">
+			<div class="langtag">RU</div>
+			<table class="list">
+			    <tr class="header">
+			        <td><input type="checkbox" name="select-all" id="select-all-ru" class="select-all" />
+						<label for="select-all-ru">Vali</label>
+			        </td>
+			        <td><a href="">lehe nimi</a></td>
+			        <td><a href="">autor</a></td>
+			        <td><a href="">kuupäev</a></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check0-ru">
+					<label for="check0-ru"></label>
+			        </td>
+			        <td><a href="">kontakt</a></td>
+			        <td>admin</td>
+			        <td>26.02.2014</td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check1-ru">
+					<label for="check1-ru"></label>
+			        </td>
+			        <td><a href="">kontakt</a></td>
+			        <td>admin</td>
+			        <td>26.02.2014</td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check2-ru">
+					<label for="check2-ru"></label>
+			        </td>
+			        <td><a href="">kontakt</a></td>
+			        <td>admin</td>
+			        <td>26.02.2014</td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check3-ru">
+					<label for="check3-ru"></label>
+			        </td>
+			        <td><a href="">kontakt</a></td>
+			        <td>admin</td>
+			        <td>26.02.2014</td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check4-ru">
+					<label for="check4-ru"></label>
+			        </td>
+			        <td><a href="">kontakt</a></td>
+			        <td>admin</td>
+			        <td>26.02.2014</td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check5-ru">
+					<label for="check5-ru"></label>
+			        </td>
+			        <td><a href="">kontakt</a></td>
+			        <td>admin</td>
+			        <td>26.02.2014</td>
+			    </tr>
+			</table>
+		</div><!-- ru-->
+		<footer class="boxfooter group">
+			<nav class="pagin">
+					<li class="prev"><a href="#"></a></li>
+					<li><a href="#">1</a></li>
+					<li class="active"><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li class="next"><a href="#"></a></li>
+
+			</nav>
+			<div class="buttoncontainer">
+				<input type="submit" value="" class="btn" style="background-image: url(img/prugi.png);">
+				<input type="submit" value="" class="btn" style="background-image: url(img/plus.png);">
+			</div><!-- buttoncontainer -->
+		</footer><!-- boxfooter-->
+	</div><!-- box -->
+</section>
+</body>
+
+
+
+</html>

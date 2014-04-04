@@ -567,6 +567,25 @@ html body section.main .box header.boxheader .buttoncontainer, html body section
 html body section.main .box header.boxheader .buttoncontainer .btn, html body section.main .box footer.boxfooter .buttoncontainer .btn {
   margin-left: 3px;
 }
+html body section.main .box header.boxheader .otsi, html body section.main .box footer.boxfooter .otsi {
+  float: right;
+  border: 2px solid #b3b52d;
+  height: 21px;
+  margin-top: 8px;
+  padding: 2px;
+  display: inline-block;
+  outline: none;
+}
+html body section.main .box header.boxheader .submitOtsi, html body section.main .box footer.boxfooter .submitOtsi {
+  float: right;
+  border: none;
+  background-color: #b3b52d;
+  text-transform: uppercase;
+  height: 29px;
+  margin-top: 8px;
+  width: 21px;
+  display: inline-block;
+}
 html body section.main .box header.boxheader p, html body section.main .box footer.boxfooter p {
   line-height: 44px;
   margin: 0;
@@ -796,7 +815,7 @@ html body section.main table.list tr td input[type="checkbox"]:checked + label {
   background-color: #18110a;
 }
 html body section.main .modalBox {
-  background-color: rgba(179, 181, 45, 0.9);
+  background-color: rgba(179, 181, 45, 0.95);
   padding: 20px;
   width: 500px;
   border: 3px solid #fff;

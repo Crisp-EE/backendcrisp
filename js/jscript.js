@@ -111,6 +111,7 @@ $(".editor").each(function(){
 /* modal box */
 
 $('.openModal').click(function() {
+
     var id = $(this).attr('modalId');
     $('#'+id).modalBox('open');
         

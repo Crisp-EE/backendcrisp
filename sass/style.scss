@@ -2,6 +2,7 @@ $tume : #18110a;
 $hele : #23180f;
 $error : #b5672d;
 $success : #3db52d;
+$color: rgba(179, 181, 45, 1);
 @mixin colorop($op) {
   background-color: rgba(179, 181, 45, $op);
 }

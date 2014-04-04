@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/min/jscript.min.js"></script>
+<script src="js/min/wysiwyg.min.js"></script>
+<script src="js/modalBox-min.js"></script>
+
+</head>
+<body>
+<header class="main">
+	<a href="http://www.crisp.ee" class="crisplogo" target="_blank"></a>
+	<p>Welcome <a href="">Kategooria nimi(eng)</a> (<a href="#">Log Off</a>)</p>
+</header><!-- main header -->
+<aside>
+	<div class="mainlogo">
+		
+	</div><!-- mainlogo -->
+	<nav class="main">
+		<ul>
+			<li class="kodu"><a href="">Kodu</a></li>
+			<li class="lehed"><a href="">Vahelehed</a>
+				<ul>
+					<li><a href="">Kõik vahelehed</a></li>
+					<li><a href="">Lisa vaheleht</a></li>
+				</ul>
+			</li>
+			<li class="uudised"><a href="">Uudised</a></li>
+			<li class="tooted"><a href="">Tooted</a></li>
+			<li class="satted"><a href="">Sätted</a></li>
+		</ul>
+	</nav><!-- põhinavigatsioon -->
+	<div class="btn expand" id="expand" ></div>
+</aside>
+<section class="main group">
+	<div class="error">Sul pole valitud ühetgi lehte! Palun vali leht, et seda kustutada!</div><!-- error -->
+
+	<div class="box tabsActive group">
+		<header class="boxheader group">
+			<div class="headicon" style="background-image: url(img/pliiats.png);"></div><!-- icon -->
+			<p>Kategooriad</p>
+
+			
+			<div class="buttoncontainer">
+				<input type="submit" title="kustuta" value="" class="btn" style="background-image: url(img/prugi.png);">
+				<input type="button" modalId="lisaKategooria" value="" title="lisa" class="openModal btn" style="background-image: url(img/plus.png);">
+			</div><!-- buttoncontainer -->
+
+			
+		</header><!-- boxheader -->
+
+		<div id="all" class="tab-content">
+			<div class="langtag">Kõik keeled</div>
+			<table class="list">
+			    <tr class="header">
+			        <td><input type="checkbox" name="select-all" id="select-all-all" class="select-all" />
+						<label for="select-all-all">vali</label>
+			        </td>
+			        <td><a href="">EST</a></td>
+			        <td><a href="">ENG</a></td>
+			        <td><a href="">RU</a></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check0-all">
+					<label for="check0-all"></label>
+			        </td>
+			        <td><a href="">Kategooria nimi</a></td>
+			        <td><a href="">Kategooria nimi(eng)</a></td>
+			        <td><a href="">Kategooria nimi(ru)</a></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check1-all">
+					<label for="check1-all"></label>
+			        </td>
+			        <td><a href="">Kategooria nimi</a></td>
+			        <td><a href="">Kategooria nimi(eng)</a></td>
+			        <td><a href="">Kategooria nimi(ru)</a></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check2-all">
+					<label for="check2-all"></label>
+			        </td>
+			        <td><a href="">Kategooria nimi</a></td>
+			        <td><a href="">Kategooria nimi(eng)</a></td>
+			        <td><a href="">Kategooria nimi(ru)</a></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check3-all">
+					<label for="check3-all"></label>
+			        </td>
+			        <td><a href="">Kategooria nimi</a></td>
+			        <td><a href="">Kategooria nimi(eng)</a></td>
+			        <td><a href="">Kategooria nimi(ru)</a></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check4-all">
+					<label for="check4-all"></label>
+			        </td>
+			        <td><a href="">Kategooria nimi</a></td>
+			        <td><a href="">Kategooria nimi(eng)</a></td>
+			        <td><a href="">Kategooria nimi(ru)</a></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check5-all">
+					<label for="check5-all"></label>
+			        </td>
+			        <td><a href="">Kategooria nimi</a></td>
+			        <td><a href="">Kategooria nimi(eng)</a></td>
+			        <td><a href="">Kategooria nimi(ru)</a></td>
+			    </tr>
+			</table>
+		</div><!-- kõik -->
+
+	</div><!-- box -->
+
+
+
+	<!-- *************** tootjad ******************* -->
+
+	<div class="box tabsActive group">
+		<header class="boxheader group">
+			<div class="headicon" style="background-image: url(img/pliiats.png);"></div><!-- icon -->
+			<p>Tootjad</p>
+
+			
+			<div class="buttoncontainer">
+				<input type="submit" value="" title="Salvesta" class="btn" style="background-image: url(img/save.png);">
+				<input type="submit" title="kustuta" value="" class="btn" style="background-image: url(img/prugi.png);">
+				<input type="submit" modalId="lisaFirma" value="" title="lisa" class="openModal btn"  style="background-image: url(img/plus.png);">
+			</div><!-- buttoncontainer -->
+
+			
+		</header><!-- boxheader -->
+
+		<div id="firma" class="tab-content">
+			<div class="langtag">Kõik keeled</div>
+			<table class="list">
+			    <tr class="header">
+			        <td><input type="checkbox" name="select-firma" id="select-all-firma" class="select-all" />
+						<label for="select-all-firma">vali</label>
+			        </td>
+			        <td><a href="">EST</a></td>
+			        <td><a href="">ENG</a></td>
+			        <td><a href="">RU</a></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check0-firma">
+					<label for="check0-firma"></label>
+			        </td>
+			        <td><input type="text" value="Tootjanimi (est)"></td>
+			        <td><input type="text" value="Tootjanimi (eng)"></td>
+			        <td><input type="text" value="Tootjanimi (ru)"></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check1-firma">
+					<label for="check1-firma"></label>
+			        </td>
+			        <td><input type="text" value="Tootjanimi (est)"></td>
+			        <td><input type="text" value="Tootjanimi (eng)"></td>
+			        <td><input type="text" value="Tootjanimi (ru)"></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check2-firma">
+					<label for="check2-firma"></label>
+			        </td>
+			        <td><input type="text" value="Tootjanimi (est)"></td>
+			        <td><input type="text" value="Tootjanimi (eng)"></td>
+			        <td><input type="text" value="Tootjanimi (ru)"></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check3-firma">
+					<label for="check3-firma"></label>
+			        </td>
+			        <td><input type="text" value="Tootjanimi (est)"></td>
+			        <td><input type="text" value="Tootjanimi (eng)"></td>
+			        <td><input type="text" value="Tootjanimi (ru)"></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check4-firma">
+					<label for="check4-firma"></label>
+			        </td>
+			        <td><input type="text" value="Tootjanimi (est)"></td>
+			        <td><input type="text" value="Tootjanimi (eng)"></td>
+			        <td><input type="text" value="Tootjanimi (ru)"></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check5-firma">
+					<label for="check5-firma"></label>
+			        </td>
+			        <td><input type="text" value="Tootjanimi (est)"></td>
+			        <td><input type="text" value="Tootjanimi (eng)"></td>
+			        <td><input type="text" value="Tootjanimi (ru)"></td>
+			    </tr>
+			</table>
+		</div><!-- kõik -->
+
+
+	</div><!-- box -->
+
+
+		<!-- *************** tootjamaad******************* -->
+
+	<div class="box tabsActive group">
+		<header class="boxheader group">
+			<div class="headicon" style="background-image: url(img/pliiats.png);"></div><!-- icon -->
+			<p>Tootjamaad</p>
+
+			
+			<div class="buttoncontainer">
+				<input type="submit" value="" title="Salvesta" class="btn" style="background-image: url(img/save.png);">
+				<input type="submit" title="kustuta" value="" class="btn" style="background-image: url(img/prugi.png);">
+				<input type="submit" modalId="lisaValmistaja" value="" title="lisa" class="openModal btn"  style="background-image: url(img/plus.png);">
+			</div><!-- buttoncontainer -->
+
+			
+		</header><!-- boxheader -->
+
+		<div id="maa" class="tab-content">
+			<div class="langtag">Kõik keeled</div>
+			<table class="list">
+			    <tr class="header">
+			        <td><input type="checkbox" name="select-maa" id="select-all-maa" class="select-all" />
+						<label for="select-all-maa">vali</label>
+			        </td>
+			        <td><a href="">EST</a></td>
+			        <td><a href="">ENG</a></td>
+			        <td><a href="">RU</a></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check0-maa">
+					<label for="check0-maa"></label>
+			        </td>
+			        <td><input type="text" value="Tootjamaa (est)"></td>
+			        <td><input type="text" value="Tootjamaa (eng)"></td>
+			        <td><input type="text" value="Tootjamaa (ru)"></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check1-maa">
+					<label for="check1-maa"></label>
+			        </td>
+			        <td><input type="text" value="Tootjamaa (est)"></td>
+			        <td><input type="text" value="Tootjamaa (eng)"></td>
+			        <td><input type="text" value="Tootjamaa (ru)"></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check2-maa">
+					<label for="check2-maa"></label>
+			        </td>
+			        <td><input type="text" value="Tootjamaa (est)"></td>
+			        <td><input type="text" value="Tootjamaa (eng)"></td>
+			        <td><input type="text" value="Tootjamaa (ru)"></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check3-maa">
+					<label for="check3-maa"></label>
+			        </td>
+			        <td><input type="text" value="Tootjamaa (est)"></td>
+			        <td><input type="text" value="Tootjamaa (eng)"></td>
+			        <td><input type="text" value="Tootjamaa (ru)"></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check4-maa">
+					<label for="check4-maa"></label>
+			        </td>
+			        <td><input type="text" value="Tootjamaa (est)"></td>
+			        <td><input type="text" value="Tootjamaa (eng)"></td>
+			        <td><input type="text" value="Tootjamaa (ru)"></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check5-maa">
+					<label for="check5-maa"></label>
+			        </td>
+			        <td><input type="text" value="Tootjamaa (est)"></td>
+			        <td><input type="text" value="Tootjamaa (eng)"></td>
+			        <td><input type="text" value="Tootjamaa (ru)"></td>
+			    </tr>
+			</table>
+		</div><!-- kõik -->
+
+
+
+	</div><!-- box -->
+
+
+
+		<!-- *************** Seisukord******************* -->
+
+	<div class="box tabsActive group">
+		<header class="boxheader group">
+			<div class="headicon" style="background-image: url(img/pliiats.png);"></div><!-- icon -->
+			<p>Seisukord</p>
+
+			
+			<div class="buttoncontainer">
+				<input type="submit" value="" title="Salvesta" class="btn" style="background-image: url(img/save.png);">
+				<input type="submit" title="kustuta" value="" class="btn" style="background-image: url(img/prugi.png);">
+				<input type="submit" modalId="lisaSeisukord" value="" title="lisa" class="openModal btn"  style="background-image: url(img/plus.png);">
+			</div><!-- buttoncontainer -->
+
+			
+		</header><!-- boxheader -->
+
+		<div id="seis" class="tab-content">
+			<div class="langtag">Kõik keeled</div>
+			<table class="list">
+			    <tr class="header">
+			        <td><input type="checkbox" name="select-seis" id="select-all-seis" class="select-all" />
+						<label for="select-all-seis">vali</label>
+			        </td>
+			        <td><a href="">EST</a></td>
+			        <td><a href="">ENG</a></td>
+			        <td><a href="">RU</a></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check0-seis">
+					<label for="check0-seis"></label>
+			        </td>
+			        <td><input type="text" value="Uus (est)"></td>
+			        <td><input type="text" value="Uus (eng)"></td>
+			        <td><input type="text" value="Uus (ru)"></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check1-seis">
+					<label for="check1-seis"></label>
+			        </td>
+			        <td><input type="text" value="Kasutatud (est)"></td>
+			        <td><input type="text" value="Kasutatud (eng)"></td>
+			        <td><input type="text" value="Kasutatud (ru)"></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check2-seis">
+					<label for="check2-seis"></label>
+			        </td>
+			        <td><input type="text" value="Renoveeritud (est)"></td>
+			        <td><input type="text" value="Renoveeritud (eng)"></td>
+			        <td><input type="text" value="Renoveeritud (ru)"></td>
+			    </tr>
+			</table>
+		</div><!-- kõik -->
+
+
+
+	</div><!-- box -->
+
+
+
+		<!-- ***************Laoseis******************* -->
+
+	<div class="box tabsActive group">
+		<header class="boxheader group">
+			<div class="headicon" style="background-image: url(img/pliiats.png);"></div><!-- icon -->
+			<p>Laoseis</p>
+
+			
+			<div class="buttoncontainer">
+				<input type="submit" value="" title="Salvesta" class="btn" style="background-image: url(img/save.png);">
+			</div><!-- buttoncontainer -->
+
+			
+		</header><!-- boxheader -->
+
+		<div id="all" class="tab-content">
+			<div class="langtag">Kõik keeled</div>
+			<table class="list">
+			    <tr class="header">
+			        <td><a href="">EST</a></td>
+			        <td><a href="">ENG</a></td>
+			        <td><a href="">RU</a></td>
+			    </tr>
+			    <tr>
+			        <td><input type="text" value="Laos (est)"></td>
+			        <td><input type="text" value="Laos (eng)"></td>
+			        <td><input type="text" value="Laos (ru)"></td>
+			    </tr>
+			    <tr>
+			        <td><input type="text" value="Tellimisel (est)"></td>
+			        <td><input type="text" value="Tellimisel (eng)"></td>
+			        <td><input type="text" value="Tellimisel (ru)"></td>
+			    </tr>
+			    <tr>
+			        <td><input type="text" value="Otsas (est)"></td>
+			        <td><input type="text" value="Otsas (eng)"></td>
+			        <td><input type="text" value="Otsas (ru)"></td>
+			    </tr>
+			</table>
+		</div><!-- kõik -->
+
+		<!-- ************************ lisamisekastid ****************** -->
+
+		<div class="modalBox group" id="lisaKategooria" style="display:none">
+			<div class="success">Korras!</div>
+			<h1>Kategooria lisamine</h1>
+			<input type="file" class="fileInput" id="lisapilt">
+			<label for="lisapilt">Lisa pilt</label>
+			<div class="piltWrapper">
+				<img class="pisipilt" src="img/thumb.png" alt="">
+				<input type="submit" value="" class="kustutaPilt">
+			</div>
+			<input type="text" class="lahter pealkiri" placeholder="Kategooria nimi (EST)">
+			<input type="text" class="lahter pealkiri" placeholder="Kategooria nimi (ENG)">
+			<input type="text" class="lahter pealkiri" placeholder="Kategooria nimi (RU)">
+			<input type="submit"  value="" class="btn" style="background-image: url(img/save.png);">
+		</div><!-- lisakategooria -->
+
+		<div class="modalBox group" id="lisaValmistaja" style="display:none">
+			<div class="error">Sa ei kirjutanud ühte lahtrisse!</div>
+			<h1>Tootjamaa lisamine</h1>
+			<input type="text" class="lahter pealkiri" placeholder="Tootjamaa (EST)">
+			<input type="text" class="lahter pealkiri" placeholder="Tootjamaa (ENG)">
+			<input type="text" class="lahter pealkiri" placeholder="Tootjamaa (RU)">
+			<input type="submit"  value="" class="btn" style="background-image: url(img/save.png);">
+		</div><!-- lisa valmistajamaa -->
+
+		<div class="modalBox group" id="lisaFirma" style="display:none">
+			<div class="error"  style="display:none">Sa ei kirjutanud ühte lahtrisse!</div>
+			<h1>Tootjafirma lisamine</h1>
+			<input type="text" class="lahter pealkiri" placeholder="Tootjafirma (EST)">
+			<input type="text" class="lahter pealkiri" placeholder="Tootjafirma (ENG)">
+			<input type="text" class="lahter pealkiri" placeholder="Tootjafirma (RU)">
+			<input type="submit"  value="" class="btn" style="background-image: url(img/save.png);">
+		</div><!-- lisa firma -->
+		
+		<div class="modalBox group" id="lisaSeisukord" style="display:none">
+			<div class="error"  style="display:none">Sa ei kirjutanud ühte lahtrisse!</div>
+			<h1>Seiskorra lisamine</h1>
+			<input type="text" class="lahter pealkiri" placeholder="Seisukord (EST)">
+			<input type="text" class="lahter pealkiri" placeholder="Seisukord (ENG)">
+			<input type="text" class="lahter pealkiri" placeholder="Seisukord (RU)">
+			<input type="submit"  value="" class="btn" style="background-image: url(img/save.png);">
+		</div><!-- lisa seisukord -->
+
+
+	</div><!-- box -->
+
+
+
+
+</section>
+</body>
+
+
+
+</html>

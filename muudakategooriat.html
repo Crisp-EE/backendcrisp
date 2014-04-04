@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/min/jscript.min.js"></script>
+<script src="js/min/wysiwyg.min.js"></script>
+
+
+</head>
+<body>
+<header class="main">
+	<a href="http://www.crisp.ee" class="crisplogo" target="_blank"></a>
+	<p>Welcome Admin (<a href="#">Log Off</a>)</p>
+</header><!-- main header -->
+<aside>
+	<div class="mainlogo">
+		
+	</div><!-- mainlogo -->
+	<nav class="main">
+		<ul>
+			<li class="kodu"><a href="">Kodu</a></li>
+			<li class="lehed"><a href="">Vahelehed</a>
+				<ul>
+					<li><a href="">Kõik vahelehed</a></li>
+					<li><a href="">Lisa vaheleht</a></li>
+				</ul>
+			</li>
+			<li class="uudised"><a href="">Uudised</a></li>
+			<li class="tooted"><a href="">Tooted</a></li>
+			<li class="satted"><a href="">Sätted</a></li>
+		</ul>
+	</nav><!-- põhinavigatsioon -->
+	<div class="btn expand" id="expand" ></div>
+</aside>
+<section class="main group">
+	<div class="error" >Error</div><!-- error -->
+
+	
+	<div class="box tabsActive group" id="slaid">
+		<header class="boxheader group">
+			<div class="headicon" style="background-image: url(img/plus.png);"></div><!-- icon -->
+			<p>Kategooria muutmine</p>
+			<div class="buttoncontainer">
+				<input type="submit" title="kustuta" value="" class="btn" style="background-image: url(img/prugi.png);">
+				<input type="submit" value="" title="salvesta" class="btn" style="background-image: url(img/save.png);">
+			</div><!-- buttoncontainer -->
+			
+		</header><!-- boxheader -->
+		<div class="langtag">Kõik keeled</div>
+		<div class="lahter kast100 group">
+			<input type="file" class="fileInput" id="lisapilt">
+			<label for="lisapilt">Lisa pilt</label>
+			<div class="pisipildid">
+				<div class="piltWrapper">
+					<img class="pisipilt" src="img/thumb.png" alt="">
+					<input type="submit" value="" value="" class="kustutaPilt">
+				</div>
+			</div><!-- pisipildid-->
+		</div><!-- pildilisamine -->
+		<nav class="lang">
+			<ul>
+				<li><a href="#est" class="lang-link" onclick="return false;">EST</a></li>
+				<li><a href="#eng" class="lang-link"  onclick="return false;">ENG</a></li>
+				<li><a href="#ru" class="lang-link"  onclick="return false;">RU</a></li>
+			</ul>
+		</nav><!-- lang choose -->
+		<div id="eng" class="tab-content">
+			<div class="langtag">ENG</div>
+			<input type="text" value="" placeholder="Kategooria" class="lahter pealkiri">
+
+		</div><!-- eng -->
+		<div id="ru" class="tab-content">
+			<div class="langtag">RU</div>
+			<input type="text" value="" placeholder="Kategooria" class="lahter pealkiri">
+
+		</div><!-- ru -->
+		<div id="est" class="tab-content">
+			<div class="langtag">EST</div>
+			<input type="text" value="" placeholder="Kategooria" class="lahter pealkiri">
+		</div><!-- est -->
+
+		<footer class="boxfooter group">
+			<div class="buttoncontainer">
+				<input type="submit" title="kustuta" value="" class="btn" style="background-image: url(img/prugi.png);">
+				<input type="submit" value="" title="salvesta" class="btn" style="background-image: url(img/save.png);">
+
+			</div><!-- buttoncontainer -->
+		</footer><!-- boxfooter-->
+
+
+		
+	</div><!-- box -->
+
+	
+</section>
+</body>
+
+
+</html>

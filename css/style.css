@@ -612,6 +612,32 @@ html body section.main .box nav.lang ul li a {
   font-family: 'latobold';
   font-size: 0.7em;
 }
+html body section.main .box .fileInput {
+  display: none;
+}
+html body section.main .box .fileInput + label {
+  display: block;
+  height: 26px;
+  padding-left: 30px;
+  padding-right: 10px;
+  line-height: 26px;
+  color: #fff;
+  background-image: url("../img/lisapilt.png");
+  background-color: #b3b52d;
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  cursor: hand;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  float: left;
+  margin-right: 20px;
+  width: 7%;
+}
 html body section.main .box .lahter {
   max-width: 100%;
   min-width: 100%;
@@ -647,37 +673,11 @@ html body section.main .box .lahter:-ms-input-placeholder {
 html body section.main .box .lahter:hover, html body section.main .box .lahter:focus {
   background-color: rgba(179, 181, 45, 0.6);
 }
-html body section.main .box .lahter.kast100 .fileInput {
-  display: none;
-}
-html body section.main .box .lahter.kast100 .fileInput + label {
-  display: block;
-  height: 26px;
-  padding-left: 30px;
-  padding-right: 10px;
-  line-height: 26px;
-  color: #fff;
-  background-image: url("../img/lisapilt.png");
-  background-color: #b3b52d;
-  background-repeat: no-repeat;
-  background-position: 5px center;
-  cursor: hand;
-  cursor: pointer;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  float: left;
-  margin-right: 20px;
-  width: 7%;
-}
 html body section.main .box .lahter .pisipildid {
   width: 85%;
   float: left;
 }
-html body section.main .box .lahter .pisipildid .piltWrapper {
+html body section.main .box .piltWrapper {
   display: inline-block;
   width: 120px;
   margin-right: 12px;
@@ -685,10 +685,10 @@ html body section.main .box .lahter .pisipildid .piltWrapper {
   position: relative;
   vertical-align: top;
 }
-html body section.main .box .lahter .pisipildid .piltWrapper .pisipilt {
+html body section.main .box .piltWrapper .pisipilt {
   width: 120px;
 }
-html body section.main .box .lahter .pisipildid .piltWrapper .kustutaPilt {
+html body section.main .box .piltWrapper .kustutaPilt {
   position: absolute;
   top: -12px;
   right: -12px;
@@ -710,6 +710,10 @@ html body section.main .box .lahter .pisipildid .piltWrapper .kustutaPilt {
 html body section.main table.list {
   width: 100%;
   text-align: center;
+}
+html body section.main table.list img.pisipilt {
+  height: 50px;
+  width: auto;
 }
 html body section.main table.list tr {
   height: 40px;
@@ -790,6 +794,40 @@ html body section.main table.list tr td input[type="checkbox"] + label {
 }
 html body section.main table.list tr td input[type="checkbox"]:checked + label {
   background-color: #18110a;
+}
+html body section.main .modalBox {
+  background-color: rgba(179, 181, 45, 0.9);
+  padding: 20px;
+  width: 500px;
+  border: 3px solid #fff;
+  -webkit-box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.3);
+}
+html body section.main .modalBox .fileInput + label {
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+html body section.main .modalBox .lahter {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+html body section.main .modalBox .btn {
+  background-color: rgba(255, 255, 255, 0.2);
+  float: right;
+}
+html body section.main .modalBox h1 {
+  height: 30px;
+  background-color: #23180f;
+  color: #fff;
+  font-weight: normal;
+  margin: 0;
+  padding: 10px;
+  font-family: 'latobold';
+  text-transform: uppercase;
+  font-size: 0.8em;
+  line-height: 30px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid white;
 }
 
 /*
@@ -984,4 +1022,90 @@ aside nav.main ul li ul li a:after {
   left: 25px;
   top: 50%;
   margin-top: -2.5px;
+}
+
+#tootelisamine table.valikud {
+  width: 100%;
+}
+#tootelisamine table.valikud h1 {
+  text-transform: uppercase;
+  font-family: 'latolight';
+  font-weight: normal;
+  font-size: 0.9em;
+  height: 1.5em;
+  color: #fff;
+  background-color: #b3b52d;
+  margin: 0;
+  line-height: 1.5em;
+  text-align: center;
+  position: relative;
+}
+#tootelisamine table.valikud h1 .lisa {
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 0px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'latobold';
+  text-decoration: none;
+  font-size: 0.7em;
+  background-image: url("../img/plus.png");
+  background-repeat: no-repeat;
+  padding-left: 15px;
+  background-size: auto 60%;
+  background-position: center left;
+  cursor: hand;
+  cursor: pointer;
+}
+#tootelisamine table.valikud tr td {
+  vertical-align: top;
+}
+#tootelisamine table.valikud tr td form {
+  margin: 10px;
+  max-height: 100px;
+  overflow-y: auto;
+}
+#tootelisamine table.valikud tr td form.kategooria {
+  max-height: 200px;
+}
+#tootelisamine table.valikud tr td input[type="radio"], #tootelisamine table.valikud tr td input[type="checkbox"] {
+  display: none;
+}
+#tootelisamine table.valikud tr td input[type="radio"] + label, #tootelisamine table.valikud tr td input[type="checkbox"] + label {
+  display: block;
+  text-transform: capitalize;
+  float: left;
+  clear: both;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  height: 20px;
+  padding-left: 15px;
+}
+#tootelisamine table.valikud tr td input[type="radio"] + label:after, #tootelisamine table.valikud tr td input[type="checkbox"] + label:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #18110a;
+  height: 7px;
+  width: 7px;
+  left: 0px;
+  top: 50%;
+  margin-top: -3.5px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+#tootelisamine table.valikud tr td input[type="checkbox"] + label:after {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+#tootelisamine table.valikud tr td input[type="radio"]:checked + label:after, #tootelisamine table.valikud tr td input[type="checkbox"]:checked + label:after {
+  background-color: #18110a;
 }

@@ -249,6 +249,32 @@ html{
 						}
 					}
 				}//lang
+				.fileInput{
+					display:none;
+				}
+				.fileInput + label {
+						display: block;
+						height: 26px;
+						padding-left: 30px;
+						padding-right: 10px;
+						line-height: 26px;
+						color: #fff;
+						background-image: url("../img/lisapilt.png");
+						@include colorop(1);
+						background-repeat: no-repeat;
+						background-position: 5px center;
+						cursor: hand;
+						cursor: pointer;
+					    -webkit-touch-callout: none;
+						-webkit-user-select: none;
+						-khtml-user-select: none;
+						-moz-user-select: none;
+						-ms-user-select: none;
+						user-select: none;
+						float:left;
+						margin-right: 20px;
+						width: 7%;
+				}
 				.lahter{
 					max-width: 100%;
 					min-width: 100%;
@@ -281,79 +307,53 @@ html{
 					&:hover, &:focus{
 						@include colorop(0.6);
 					}
-
-					&.kast100{
-						.fileInput{
-							display:none;
-						}
-						.fileInput + label {
-								display: block;
-								height: 26px;
-								padding-left: 30px;
-								padding-right: 10px;
-								line-height: 26px;
-								color: #fff;
-								background-image: url("../img/lisapilt.png");
-								@include colorop(1);
-								background-repeat: no-repeat;
-								background-position: 5px center;
-								cursor: hand;
-								cursor: pointer;
-							    -webkit-touch-callout: none;
-								-webkit-user-select: none;
-								-khtml-user-select: none;
-								-moz-user-select: none;
-								-ms-user-select: none;
-								user-select: none;
-								float:left;
-								margin-right: 20px;
-								width: 7%;
-						}
-					}
 					.pisipildid{
 						width: 85%;
 						float:left;
 
-						.piltWrapper {
-							display: inline-block;
-							width:120px;
-							margin-right: 12px;
-							margin-bottom: 20px;
-							position: relative;
-							vertical-align: top;
-							.pisipilt{
-								width: 120px;
-							}
-							.kustutaPilt{
-
-								position: absolute;
-								top: -12px;
-								right: -12px;
-								border:none;
-								background-color: transparent;
-								display: block;
-								width: 12px;
-								height: 12px;
-								padding: 0;
-								margin: 0;
-								background-image: url("../img/plus.png");
-								background-size: contain;
-								-moz-transform: rotate(45deg);
-								-webkit-transform: rotate(45deg);
-								-o-transform: rotate(45deg);
-								-ms-transform: rotate(45deg);
-								transform: rotate(45deg);
-							}
-						}
-
 					}
 					
 				}//lahter
+				.piltWrapper {
+					display: inline-block;
+					width:120px;
+					margin-right: 12px;
+					margin-bottom: 20px;
+					position: relative;
+					vertical-align: top;
+					.pisipilt{
+						width: 120px;
+					}
+					.kustutaPilt{
+
+						position: absolute;
+						top: -12px;
+						right: -12px;
+						border:none;
+						background-color: transparent;
+						display: block;
+						width: 12px;
+						height: 12px;
+						padding: 0;
+						margin: 0;
+						background-image: url("../img/plus.png");
+						background-size: contain;
+						-moz-transform: rotate(45deg);
+						-webkit-transform: rotate(45deg);
+						-o-transform: rotate(45deg);
+						-ms-transform: rotate(45deg);
+						transform: rotate(45deg);
+					}
+				}
 			}//box
 
 			table.list{
 				width: 100%;
 				text-align: center;
+				img.pisipilt{
+					height: 50px;
+					width: auto;
+				}
 				tr{
 					height: 40px;
 
@@ -442,6 +442,40 @@ html{
 					}//td
 				}//tr
 			}//tabel
+			.modalBox{
+				@include colorop(0.9);
+				padding: 20px;
+				width: 500px;
+				border: 3px solid #fff;
+				-webkit-box-shadow: 6px 6px 25px rgba(0,0,0, 0.3);
+				-moz-box-shadow: 6px 6px 25px rgba(0,0,0, 0.3);
+				box-shadow: 6px 6px 25px rgba(0,0,0, 0.3);
+				.fileInput + label{
+					width: auto;
+					background-color: rgba(255,255,255, 0.2);
+				}
+				.lahter{
+					background-color: rgba(255,255,255, 0.2);
+				}
+				.btn{
+					background-color: rgba(255,255,255, 0.2);
+					float:right;
+				}
+				h1{
+					height: 30px;
+					background-color: $hele;
+					color: #fff;
+					font-weight: normal;
+					margin: 0;
+					padding: 10px;
+					font-family: 'latobold';
+					text-transform: uppercase;
+					font-size: 0.8em;
+					line-height: 30px;
+					margin-bottom: 15px;
+					border-bottom: 2px solid rgba(255,255,255, 1);
+				}
+			}
 		}//Main section
 	}
 }

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/min/jscript.min.js"></script>
+<script src="js/min/wysiwyg.min.js"></script>
+<script src="js/modalBox-min.js"></script>
+
+
+
+</head>
+<body>
+<header class="main">
+	<a href="http://www.crisp.ee" class="crisplogo" target="_blank"></a>
+	<p>Welcome Admin (<a href="#">Log Off</a>)</p>
+</header><!-- main header -->
+<aside>
+	<div class="mainlogo">
+		
+	</div><!-- mainlogo -->
+	<nav class="main">
+		<ul>
+			<li class="kodu"><a href="">Kodu</a></li>
+			<li class="lehed"><a href="">Vahelehed</a>
+				<ul>
+					<li><a href="">Kõik vahelehed</a></li>
+					<li><a href="">Lisa vaheleht</a></li>
+				</ul>
+			</li>
+			<li class="uudised"><a href="">Uudised</a></li>
+			<li class="tooted"><a href="">Tooted</a>
+				<ul>
+					<li><a href="">Kõik tooted</a></li>
+					<li><a href="">Lisa toode</a></li>
+					<li><a href="">Halda valikuid</a></li>
+				</ul>
+
+			</li>
+			<li class="satted"><a href="">Sätted</a></li>
+		</ul>
+	</nav><!-- põhinavigatsioon -->
+	<div class="btn expand" id="expand" ></div>
+</aside>
+<section class="main group">
+	<div class="error" >Error</div><!-- error -->
+
+	
+	<div class="box tabsActive group" id="tootelisamine">
+		<header class="boxheader group">
+			<div class="headicon" style="background-image: url(img/plus.png);"></div><!-- icon -->
+			<p>Toote lisamine</p>
+			<div class="buttoncontainer">
+				<a href="#" title="Halda valikuid" class="btn" style="background-image: url(img/pliiats.png);"></a>
+				<input type="submit" value="" title="Kustuta" class="btn" style="background-image: url(img/prugi.png);">
+				<input type="submit" value="" title="Salvesta" class="btn" style="background-image: url(img/save.png);">
+			</div><!-- buttoncontainer -->
+			
+		</header><!-- boxheader -->
+		<div class="langtag">Kõik keeled</div>
+		<div class="lahter kast100 group">
+			<input type="file" class="fileInput" id="lisapilt">
+			<label for="lisapilt">Lisa pilt</label>
+			<div class="pisipildid">
+				<div class="piltWrapper">
+					<img class="pisipilt" src="img/thumb.png" alt="">
+					<input type="submit" value="" class="kustutaPilt">
+				</div>
+
+				<div class="piltWrapper">
+					<img class="pisipilt" src="img/thumb.png" alt="">
+					<input type="submit" value="" class="kustutaPilt">
+				</div>
+
+				<div class="piltWrapper">
+					<img class="pisipilt" src="img/thumb.png" alt="">
+					<input type="submit" value="" class="kustutaPilt">
+				</div>
+
+				<div class="piltWrapper">
+					<img class="pisipilt" src="img/thumb.png" alt="">
+					<input type="submit" value="" class="kustutaPilt">
+				</div>
+
+				<div class="piltWrapper">
+					<img class="pisipilt" src="img/thumb2.png" alt="">
+					<input type="submit" value="" class="kustutaPilt">
+				</div>
+
+				<div class="piltWrapper">
+					<img class="pisipilt" src="img/thumb.png" alt="">
+					<input type="submit" value="" class="kustutaPilt">
+				</div>
+
+				<div class="piltWrapper">
+					<img class="pisipilt" src="img/thumb2.png" alt="">
+					<input type="submit" value="" class="kustutaPilt">
+				</div>
+
+				<div class="piltWrapper">
+					<img class="pisipilt" src="img/thumb.png" alt="">
+					<input type="submit" value="" class="kustutaPilt">
+				</div>
+
+				<div class="piltWrapper">
+					<img class="pisipilt" src="img/thumb.png" alt="">
+					<input type="submit" value="" class="kustutaPilt">
+				</div>
+			</div><!-- pisipildid-->
+			
+		</div><!-- pildilisamine -->
+
+		<div class="lahter kast100 group">
+			<table class="valikud">
+			    <tr>
+			        <td>
+			        	<h1>laoseis</h1>
+			        	<form class="group" action="">
+				        	<input type="radio" name="laoseis" value="laos" id="laos">
+							<label for="laos">Laos</label>
+							<input type="radio" name="laoseis" value="tellimisel" id="tellimisel">
+							<label for="tellimisel">Tellimisel</label>
+							<input type="radio" name="laoseis" value="otsas" id="otsas">
+							<label for="otsas">Otsas</label>
+						</form>
+					</td><!-- laoseis -->
+			        <td rowspan="2">
+			        <h1>kategooria <div modalId="lisaKategooria" class="lisa openModal">Lisa</div></h1>
+			        	<form class="group kategooria" action="">
+				        	<input type="checkbox" name="kategooria" value="Kategooria1" id="Kategooria1">
+							<label for="Kategooria1">Kategooria1</label>
+							<input type="checkbox" name="kategooria" value="kategooria2" id="kategooria2">
+							<label for="kategooria2">kategooria2</label>
+							<input type="checkbox" name="kategooria" value="Kategooria3" id="Kategooria3">
+							<label for="Kategooria3">Kategooria3</label>
+							<input type="checkbox" name="kategooria" value="Kategooria4" id="Kategooria4">
+							<label for="Kategooria4">Kategooria4</label>
+							<input type="checkbox" name="kategooria" value="Kategooria5" id="Kategooria5">
+							<label for="Kategooria5">Kategooria5</label>
+							<input type="checkbox" name="kategooria" value="Kategooria6" id="Kategooria6">
+							<label for="Kategooria6">Kategooria6</label>
+							<input type="checkbox" name="kategooria" value="Kategooria7" id="Kategooria7">
+							<label for="Kategooria7">Kategooria7</label>
+						</form>
+			        </td><!-- kategooriad -->
+			    </tr>
+			    <tr>
+			        <td><h1>seisukord <div modalId="lisaSeisukord" class="lisa openModal">Lisa</div></h1>
+			        <form class="group" action="">
+			        	<input type="radio" name="seisukord" value="uus" id="uus">
+						<label for="uus">uus</label>
+						<input type="radio" name="seisukord" value="kasutatud" id="kasutatud">
+						<label for="kasutatud">kasutatud</label>
+						<input type="radio" name="seisukord" value="renoveerimisel" id="renoveerimisel">
+						<label for="renoveerimisel">renoveerimisel</label>
+					</form>
+			        </td><!-- seisukord -->
+			    </tr>
+			    <tr>
+			        <td><h1>Tootjamaa <div modalId="lisaValmistaja" class="lisa openModal">Lisa</div></h1>
+					<form class="group" action="">
+			        	<input type="radio" name="valmistusmaa" value="Norra" id="Norra">
+						<label for="Norra">Norra</label>
+						<input type="radio" name="valmistusmaa" value="Rootsi" id="Rootsi">
+						<label for="Rootsi">Rootsi</label>
+						<input type="radio" name="valmistusmaa" value="Venemaa" id="Venemaa">
+						<label for="Venemaa">Venemaa</label>
+						<input type="radio" name="valmistusmaa" value="Saksamaa" id="Saksamaa">
+						<label for="Saksamaa">Saksamaa</label>
+						<input type="radio" name="valmistusmaa" value="Eesti" id="Eesti">
+						<label for="Eesti">Eesti</label>
+						<input type="radio" name="valmistusmaa" value="Leedu" id="Leedu">
+						<label for="Leedu">Leedu</label>
+						<input type="radio" name="valmistusmaa" value="Läti" id="Läti">
+						<label for="Läti">Läti</label>
+					</form>
+			        </td><!-- valmistajamaa  -->
+			        <td><h1>tootjafirma <div  modalId="lisaFirma" class="lisa openModal">Lisa</div> </h1>
+						<form class="group" action="">
+				        	<input type="radio" name="tootja" value="Vatw" id="Vatw">
+							<label for="Vatw">Vatw</label>
+							<input type="radio" name="tootja" value="miwe" id="miwe">
+							<label for="miwe">miwe</label>
+							<input type="radio" name="tootja" value="Fritsch" id="Fritsch">
+							<label for="Fritsch">Fritsch</label>
+							<input type="radio" name="tootja" value="Jufeba" id="Jufeba">
+							<label for="Jufeba">Jufeba</label>
+							<input type="radio" name="tootja" value="Toolbox" id="Toolbox">
+							<label for="Toolbox">Toolbox</label>
+							<input type="radio" name="tootja" value="Jac" id="Jac">
+							<label for="Jac">Jac</label>
+							<input type="radio" name="tootja" value="Diosno" id="Diosno">
+							<label for="Diosno">Diosno</label>
+						</form>
+			        </td><!-- tootjafirma -->
+			    </tr>
+			</table>
+		</div>
+		<nav class="lang">
+			<ul>
+				<li><a href="#est" class="lang-link" onclick="return false;">EST</a></li>
+				<li><a href="#eng" class="lang-link"  onclick="return false;">ENG</a></li>
+				<li><a href="#ru" class="lang-link"  onclick="return false;">RU</a></li>
+			</ul>
+		</nav><!-- lang choose -->
+		<div id="eng" class="tab-content">
+			<div class="langtag">ENG</div>
+			<input type="text" class="lahter pealkiri" placeholder="Toote nimetus">
+			<div textarea="lahter1eng" id="lahter1engDiv" class="lahter w100 editor" contenteditable>
+			Toote kirjeldus
+			</div>
+			<textarea name="lahter1eng" id="lahter1eng" style="display:none;"></textarea>
+
+		</div><!-- eng -->
+		<div id="ru" class="tab-content">
+			<div class="langtag">RU</div>
+			<input type="text" class="lahter pealkiri" placeholder="Toote nimetus">
+			<div textarea="lahter1ru" id="lahter1ruDiv" class="lahter w100 editor" contenteditable>
+			Toote kirjeldus
+			</div>
+			<textarea name="lahter1ru" id="lahter1ru" style="display:none;"></textarea>
+
+		</div><!-- ru -->
+		<div id="est" class="tab-content">
+			<div class="langtag">EST</div>
+			<input type="text" class="lahter pealkiri" placeholder="Toote nimetus">
+			<div textarea="lahter1est" id="lahter1estDiv" class="lahter w100 editor" contenteditable>
+			Toote kirjeldus
+			</div>
+			<textarea name="lahter1est" id="lahter1est" style="display:none;"></textarea>
+		</div><!-- est -->
+
+		<footer class="boxfooter group">
+			<div class="buttoncontainer">
+				<input type="submit" title="kustuta" value="" class="btn" style="background-image: url(img/prugi.png);">
+				<input type="submit" value="" title="Salvesta" class="btn" style="background-image: url(img/save.png);">
+
+			</div><!-- buttoncontainer -->
+		</footer><!-- boxfooter-->
+
+<!-- ***************************** lisamisekastid *****************************-->
+
+		<div class="modalBox group" id="lisaKategooria" style="display:none">
+			<div class="success">Korras!</div>
+			<h1>Kategooria lisamine</h1>
+			<input type="file" class="fileInput" id="lisapilt">
+			<label for="lisapilt">Lisa pilt</label>
+			<div class="piltWrapper">
+				<img class="pisipilt" src="img/thumb.png" alt="">
+				<input type="submit" value="" class="kustutaPilt">
+			</div>
+			<input type="text" class="lahter pealkiri" placeholder="Kategooria nimi (EST)">
+			<input type="text" class="lahter pealkiri" placeholder="Kategooria nimi (ENG)">
+			<input type="text" class="lahter pealkiri" placeholder="Kategooria nimi (RU)">
+			<input type="submit"  value="" class="btn" style="background-image: url(img/save.png);">
+		</div><!-- lisakategooria -->
+
+		<div class="modalBox group" id="lisaValmistaja" style="display:none">
+			<div class="error">Sa ei kirjutanud ühte lahtrisse!</div>
+			<h1>Tootjamaa lisamine</h1>
+			<input type="text" class="lahter pealkiri" placeholder="Tootjamaa (EST)">
+			<input type="text" class="lahter pealkiri" placeholder="Tootjamaa (ENG)">
+			<input type="text" class="lahter pealkiri" placeholder="Tootjamaa (RU)">
+			<input type="submit"  value="" class="btn" style="background-image: url(img/save.png);">
+		</div><!-- lisa valmistusmaa -->
+
+		<div class="modalBox group" id="lisaFirma" style="display:none">
+			<div class="error"  style="display:none">Sa ei kirjutanud ühte lahtrisse!</div>
+			<h1>Tootjafirma lisamine</h1>
+			<input type="text" class="lahter pealkiri" placeholder="Tootjafirma (EST)">
+			<input type="text" class="lahter pealkiri" placeholder="Tootjafirma (ENG)">
+			<input type="text" class="lahter pealkiri" placeholder="Tootjafirma (RU)">
+			<input type="submit"  value="" class="btn" style="background-image: url(img/save.png);">
+		</div><!-- lisa valmistusmaa -->
+		
+		<div class="modalBox group" id="lisaSeisukord" style="display:none">
+			<div class="error"  style="display:none">Sa ei kirjutanud ühte lahtrisse!</div>
+			<h1>Seiskorra lisamine</h1>
+			<input type="text" class="lahter pealkiri" placeholder="Seisukord (EST)">
+			<input type="text" class="lahter pealkiri" placeholder="Seisukord (ENG)">
+			<input type="text" class="lahter pealkiri" placeholder="Seisukord (RU)">
+			<input type="submit"  value="" class="btn" style="background-image: url(img/save.png);">
+		</div><!-- lisa valmistusmaa -->
+	</div><!-- box -->
+
+
+
+	
+</section>
+</body>
+</html>

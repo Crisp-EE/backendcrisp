@@ -1,0 +1,91 @@
+#tootelisamine{
+	table.valikud{
+		width: 100%;
+		h1{
+			text-transform: uppercase;
+			font-family: 'latolight';
+			font-weight: normal;
+			font-size: 0.9em;
+			height: 1.5em;
+			color:#fff;
+			@include colorop(1);
+			margin: 0;
+			line-height: 1.5em;
+			text-align: center;
+			position: relative;
+			.lisa{
+				display: block;
+				position: absolute;
+				right: 5px;
+				top:0px;
+				color: #fff;
+				text-transform: uppercase;
+				font-family: 'latobold';
+				text-decoration: none;
+				font-size: 0.7em;
+				background-image: url("../img/plus.png");
+				background-repeat: no-repeat;
+				padding-left: 15px;
+				background-size: auto 60%;
+				background-position: center left;
+				cursor: hand;
+				cursor: pointer;
+			}
+		}//h1
+		tr{
+			td{
+				vertical-align: top;
+				form{
+					margin: 10px;
+					max-height: 100px;
+					overflow-y: auto;
+					&.kategooria{
+						max-height: 200px;
+					}
+				}
+				input[type="radio"], input[type="checkbox"]{
+					display:none;
+				}
+				input[type="radio"] + label, input[type="checkbox"] + label {
+				    display:block;
+				    text-transform: capitalize;
+				    float:left;
+				    clear: both;
+				    cursor: pointer;
+				    -webkit-touch-callout: none;
+					-webkit-user-select: none;
+					-khtml-user-select: none;
+					-moz-user-select: none;
+					-ms-user-select: none;
+					user-select: none;
+					position: relative;
+					height: 20px;
+					padding-left: 15px;
+					&:after{
+						content:"";
+						position: absolute;
+						border: 1px solid $tume;
+						height: 7px;
+						width: 7px;
+						left: 0px;
+						top: 50%;
+						margin-top: -3.5px;
+						-webkit-border-radius: 7px;
+						-moz-border-radius: 7px;
+						border-radius: 7px;
+					}
+				}
+				input[type="checkbox"] + label:after{
+						-webkit-border-radius: 0px;
+						-moz-border-radius: 0px;
+						border-radius: 0px;
+				}
+				input[type="radio"]:checked + label, input[type="checkbox"]:checked + label{
+					&:after{
+				   		background-color: $tume;
+					}
+				}
+			}//td
+		}//tr
+	}
+}

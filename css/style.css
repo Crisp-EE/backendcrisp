@@ -928,6 +928,9 @@ aside .mainlogo {
   width: 100%;
   background-color: #23180f;
   position: relative;
+  background-image: url("../img/logo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 aside .btn#expand {
   cursor: hand;

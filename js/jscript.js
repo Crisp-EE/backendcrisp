@@ -120,7 +120,6 @@ $('.openModal').click(function() {
 
 /** tooltip **/
 
-$( document ).tooltip();
 
 
 });//ready fn

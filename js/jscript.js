@@ -105,7 +105,14 @@ $(".editor").each(function(){
 
 });
 
-
+$('input[type="submit"]').click(function() {
+    $(".editor").each(function(){
+        var tid = $(this).attr('id');
+        var did = $(this).attr('textarea');
+        var content = document.getElementById(tid).innerHTML;
+        document.getElementById(did).value = content;
+    });
+});
 
 
 /* modal box */

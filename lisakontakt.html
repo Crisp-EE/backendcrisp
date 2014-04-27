@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/min/jscript.min.js"></script>
+<script src="js/min/wysiwyg.min.js"></script>
+
+
+</head>
+<body>
+<header class="main">
+	<a href="http://www.crisp.ee" class="crisplogo" target="_blank"></a>
+	<p>Welcome Admin (<a href="#">Log Off</a>)</p>
+</header><!-- main header -->
+<aside>
+	<div class="mainlogo">
+		
+	</div><!-- mainlogo -->
+	<nav class="main">
+		<ul>
+			<li class="kodu"><a href="">Kodu</a></li>
+			<li class="lehed"><a href="">Vahelehed</a>
+				<ul>
+					<li><a href="">Kõik vahelehed</a></li>
+					<li><a href="">Lisa vaheleht</a></li>
+				</ul>
+			</li>
+			<li class="lehed"><a href="">Kontaktid</a>
+				<ul>
+					<li><a href="">Kõik kontaktid</a></li>
+					<li><a href="">Lisa kontakt</a></li>
+				</ul>
+			</li>
+			<li class="uudised"><a href="">Uudised</a></li>
+			<li class="tooted"><a href="">Tooted</a></li>
+			<li class="satted"><a href="">Sätted</a></li>
+		</ul>
+	</nav><!-- põhinavigatsioon -->
+	<div class="btn expand" id="expand" ></div>
+</aside>
+<section class="main group">
+	<div class="error" >Error</div><!-- error -->
+
+	
+	<div class="box tabsActive group" id="avaleht">
+		<header class="boxheader group">
+			<div class="headicon" style="background-image: url(img/plus.png);"></div><!-- icon -->
+			<p>Kontakti lisamine</p>
+			<div class="buttoncontainer">
+				<input type="submit" value="" class="btn" style="background-image: url(img/prugi.png);">
+				<input type="submit" value="" class="btn" style="background-image: url(img/save.png);">
+			</div><!-- buttoncontainer -->
+			
+		</header><!-- boxheader -->
+		
+		<nav class="lang">
+			<ul>
+				<li><a href="#est" class="lang-link" onclick="return false;">EST</a></li>
+				<li><a href="#eng" class="lang-link"  onclick="return false;">ENG</a></li>
+				<li><a href="#ru" class="lang-link"  onclick="return false;">RU</a></li>
+			</ul>
+		</nav><!-- lang choose -->
+		<div id="eng" class="tab-content">
+			<div class="langtag">ENG</div>
+			<input type="text" class="lahter pealkiri" placeholder="Pealkiri">
+			<div textarea="lahter1eng" id="lahter1engDiv" class="lahter w100 editor" contenteditable>
+			Aadress
+			</div>
+			<textarea name="lahter1eng" id="lahter1eng" style="display:none;"></textarea>
+
+			<div class="tag">Andmed
+				<input type="submit" value="Lisa"class="lisa">
+			</div><!-- tag -->
+			<table class="kontakt">
+				<tr>
+					<td><input type="text" class="lahter silt" value="Telefon" placeholder="Tüüp"></td>
+					<td><input type="text" class="lahter vaste" value="53545254" placeholder="Vaste"></td>
+				</tr>
+
+				<tr>
+					<td><input type="text" class="lahter silt" value="Kontaktisik" placeholder="Tüüp"></td>
+					<td><input type="text" class="lahter vaste" value="John smith" placeholder="Vaste"></td>
+				</tr>
+			</table><!-- kontaktandmed -->
+
+		</div><!-- eng -->
+		<div id="ru" class="tab-content">
+			<div class="langtag">RU</div>
+			<input type="text" class="lahter pealkiri" placeholder="Pealkiri">
+			<div textarea="lahter1ru" id="lahter1ruDiv" class="lahter w100 editor" contenteditable>
+			Aadress
+			</div>
+			<textarea name="lahter1ru" id="lahter1ru" style="display:none;"></textarea>
+
+			<div class="tag">Andmed
+				<input type="submit" value="Lisa"class="lisa">
+			</div><!-- tag -->
+			<table class="kontakt">
+				<tr>
+					<td><input type="text" class="lahter silt" value="Telefon" placeholder="Tüüp"></td>
+					<td><input type="text" class="lahter vaste" value="53545254" placeholder="Vaste"></td>
+				</tr>
+
+				<tr>
+					<td><input type="text" class="lahter silt" value="Kontaktisik" placeholder="Tüüp"></td>
+					<td><input type="text" class="lahter vaste" value="John smith" placeholder="Vaste"></td>
+				</tr>
+			</table><!-- kontaktandmed -->
+
+		</div><!-- ru -->
+		<div id="est" class="tab-content">
+			<div class="langtag">EST</div>
+			<input type="text" class="lahter pealkiri" placeholder="Pealkiri">
+			<div textarea="lahter1est" id="lahter1estDiv" class="lahter w100 editor" contenteditable>
+			Aadress
+			</div>
+			<textarea name="lahter1est" id="lahter1est" style="display:none;"></textarea>
+
+			<div class="tag">Andmed
+				<input type="submit" value="Lisa"class="lisa">
+			</div><!-- tag -->
+			<table class="kontakt">
+				<tr>
+					<td><input type="text" class="lahter silt" value="Telefon" placeholder="Tüüp"></td>
+					<td><input type="text" class="lahter vaste" value="53545254" placeholder="Vaste"></td>
+				</tr>
+
+				<tr>
+					<td><input type="text" class="lahter silt" value="Kontaktisik" placeholder="Tüüp"></td>
+					<td><input type="text" class="lahter vaste" value="John smith" placeholder="Vaste"></td>
+				</tr>
+			</table><!-- kontaktandmed -->
+
+			
+			
+		</div><!-- est -->
+
+		<footer class="boxfooter group">
+			<div class="buttoncontainer">
+				<input type="submit" value="" class="btn" style="background-image: url(img/prugi.png);">
+				<input type="submit" class="btn" value="" style="background-image: url(img/save.png);">
+
+			</div><!-- buttoncontainer -->
+		</footer><!-- boxfooter-->
+
+
+		
+	</div><!-- box -->
+
+	
+</section>
+</body>
+
+
+</html>

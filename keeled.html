@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/min/jscript.min.js"></script>
+<script src="js/min/wysiwyg.min.js"></script>
+
+</head>
+<body>
+<header class="main">
+	<a href="http://www.crisp.ee" class="crisplogo" target="_blank"></a>
+	<p>Welcome Kategooria (<a href="#">Log Off</a>)</p>
+</header><!-- main header -->
+<aside>
+	<div class="mainlogo">
+		
+	</div><!-- mainlogo -->
+	<nav class="main">
+		<ul>
+			<li class="kodu"><a href="">Kodu</a></li>
+			<li class="lehed"><a href="">Vahelehed</a>
+				<ul>
+					<li><a href="">Kõik vahelehed</a></li>
+					<li><a href="">Lisa vaheleht</a></li>
+				</ul>
+			</li>
+			<li class="uudised"><a href="">Uudised</a></li>
+			<li class="tooted"><a href="">Tooted</a></li>
+			<li class="satted"><a href="">Sätted</a></li>
+		</ul>
+	</nav><!-- põhinavigatsioon -->
+	<div class="btn expand" id="expand" ></div>
+</aside>
+<section class="main group">
+	<div class="error">Sul pole valitud ühetgi lehte! Palun vali leht, et seda kustutada!</div><!-- error -->
+
+	<div class="box tabsActive group">
+		<header class="boxheader group">
+			<div class="headicon" style="background-image: url(img/pliiats.png);"></div><!-- icon -->
+			<p>Kõik keeled</p>
+
+			
+			<div class="buttoncontainer">
+				<input type="submit" title="kustuta" value="" class="btn" style="background-image: url(img/prugi.png);">
+				<input type="submit" value="" title="lisa" class="btn" style="background-image: url(img/plus.png);">
+			</div><!-- buttoncontainer -->
+			
+		</header><!-- boxheader -->
+
+		<div id="all" class="tab-content">
+			<div class="langtag">Kõik keeled</div>
+			<table class="list">
+			    <tr class="header">
+			        <td><input type="checkbox" name="select-all" id="select-all-all" class="select-all" />
+						<label for="select-all-all">vali</label>
+			        </td>
+			        <td><a href="">Keel</a></td>
+			        <td><a href="">kuupäev</a></td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check0-all">
+					<label for="check0-all"></label>
+			        </td>
+			        <td><a href="">Eesti</a></td>
+			        
+			        <td>26.02.2014</td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check1-all">
+					<label for="check1-all"></label>
+			        </td>
+			        <td><a href="">Vene</a></td>
+			        
+			        <td>26.02.2014</td>
+			    </tr>
+			    <tr>
+			        <td><input type="checkbox" name="kustutamiseks" id="check2-all">
+					<label for="check2-all"></label>
+			        </td>
+			        <td><a href="">Inglise</a></td>
+			        
+			        <td>26.02.2014</td>
+			    </tr>
+			 
+			</table>
+		</div><!-- kõik -->
+	</div><!-- box -->
+	
+	<!-- tõlkimis-stringid -->
+
+	<div class="box tabsActive group">
+		<header class="boxheader group">
+			<div class="headicon" style="background-image: url(img/pliiats.png);"></div><!-- icon -->
+			<p>Tõlkimine</p>
+
+			
+			<div class="buttoncontainer">
+			</div><!-- buttoncontainer -->
+			
+		</header><!-- boxheader -->
+
+		<div id="tolge" class="tab-content">
+			<div class="langtag">Kõik keeled</div>
+			<table class="list">
+			    <tr class="header">
+			        <td><a href="">Sõna (est)</a></td>
+			    </tr>
+			    <tr>
+
+			        <td><a href="">Pagari- ja kondiitriseadmed</a></td>
+			    </tr>
+			    <tr>
+
+			        <td><a href="">Otsi</a></td>
+			    </tr>
+			    <tr>
+
+			        <td><a href="">Kontakt</a></td>
+			    </tr>
+			    <tr>
+
+			        <td><a href="">Referentsid</a></td>
+			    </tr>
+			    <tr>
+
+			        <td><a href="">Vali</a></td>
+			    </tr>
+			 
+			</table>
+		</div><!-- kõik -->
+	</div><!-- box -->
+</section>
+</body>
+
+
+
+</html>
